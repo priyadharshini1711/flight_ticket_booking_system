@@ -18,12 +18,12 @@ import javax.swing.JOptionPane;
  *
  * @author PRIYADHARSHINI
  */
-public class Add extends javax.swing.JFrame {
+public class AddFlight extends javax.swing.JFrame {
 
     /**
      * Creates new form ADD
      */
-    public Add() {
+    public AddFlight() {
         initComponents();
     }
 
@@ -241,9 +241,9 @@ public class Add extends javax.swing.JFrame {
                 dispose();
             }         
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Add.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Add.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AddFlight.class.getName()).log(Level.SEVERE, null, ex);
         }        
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -269,14 +269,22 @@ public class Add extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddFlight.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddFlight.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddFlight.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AddFlight.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -289,7 +297,7 @@ public class Add extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Add().setVisible(true);
+                new AddFlight().setVisible(true);
             }
         });
     }

@@ -87,13 +87,13 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JTextField" name="jTextField2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="   ABC AIRLINES"/>
+        <Property name="text" type="java.lang.String" value="ABC AIRLINES"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="370" y="40" width="90" height="50"/>
+          <AbsoluteConstraints x="296" y="11" width="275" height="98"/>
         </Constraint>
       </Constraints>
     </Component>
