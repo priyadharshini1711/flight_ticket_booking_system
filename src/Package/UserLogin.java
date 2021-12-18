@@ -25,8 +25,10 @@ public class UserLogin extends javax.swing.JFrame {
     /**
      * Creates new form UserLogin
      */
+    public int user_id;
     public UserLogin() {
         initComponents();
+        this.user_id = -1;
     }
 
     /**
@@ -146,7 +148,7 @@ public class UserLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, output);
         }else {
             dispose();
-            new UserPage().setVisible(true);
+            new UserBooking(this.user_id, a).setVisible(true);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -210,7 +212,7 @@ public class UserLogin extends javax.swing.JFrame {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/fms?characterEncoding=utf8", "root", "");
-                PreparedStatement preparedStatement = connection.prepareStatement("select uname, password from user");
+                PreparedStatement preparedStatement = connection.prepareStatement("select id, uname, password from user");
                 ResultSet resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
                     if (a.equals(resultSet.getString("uname"))) {
@@ -219,7 +221,7 @@ public class UserLogin extends javax.swing.JFrame {
                             msg.add("Invalid Login");
                             break;
                         }
-
+                        this.user_id = resultSet.getInt("id");
                     }
                 }
             } catch (ClassNotFoundException ex) {
